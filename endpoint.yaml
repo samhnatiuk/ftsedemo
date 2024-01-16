@@ -1,0 +1,3 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineEndpoint.schema.json
+name: ftse100demo-12132267894507554523
+auth_mode: key
