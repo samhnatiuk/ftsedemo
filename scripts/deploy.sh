@@ -16,13 +16,13 @@ endpoint_name: $ENDPOINT_NAME
 model:
   name: lstm
   version: 1
-  path: models:/lstm/Staging
+  path: models:/lstm/Production
   type: mlflow_model
 instance_type: Standard_DS2_v2
 instance_count: 1
 EOF
 )
-echo "$deploy_yaml_data" > "deployment.yaml"s
+echo "$deploy_yaml_data" > "deployment.yaml"
 
 # Create endpoint
 az ml online-endpoint create --name "$ep_name" -w "$workspace_name" -g "$resource_group" -f endpoint.yaml
